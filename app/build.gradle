@@ -5,11 +5,14 @@ android {
     buildToolsVersion '28.0.3'
 
     defaultConfig {
-        applicationId "org.greenleaf.permissionaware"
+        applicationId "org.greenleaf.app"
         minSdkVersion 19
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        packagingOptions {
+            exclude 'META-INF/rxjava.properties'
+        }
     }
 
     buildTypes {
